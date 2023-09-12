@@ -29,6 +29,7 @@
   code={https://github.com/abrilcf/mednerf},
   pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9871757},
   dimensions={false},
+  preview={mednerf.png},
   abstract={Computed tomography (CT) is an effective med-ical imaging modality, widely used in the field of clinical medicine for the diagnosis of various pathologies. Advances in Multidetector CT imaging technology have enabled additional functionalities, including generation of thin slice multi planar cross-sectional body imaging and 3D reconstructions. However, this involves patients being exposed to a considerable dose of ionising radiation. Excessive ionising radiation can lead to deterministic and harmful effects on the body. This paper proposes a Deep Learning model that learns to reconstruct CT projections from a few or even a single-view X-ray. This is based on a novel architecture that builds from neural radiance fields, which learns a continuous representation of CT scans by disentangling the shape and volumetric depth of surface and internal anatomical structures from 2D images. Our model is trained on chest and knee datasets, and we demonstrate qual-itative and quantitative high-fidelity renderings and compare our approach to other recent radiance field-based methods. Our code and link to our datasets are available at https://qithub.com/abrilcf/mednerf Clinical relevance- Our model is able to infer the anatomical 3D structure from a few or a single-view X-ray showing future potential for reduced ionising radiation exposure during the imaging process.}
 }
 
@@ -43,5 +44,6 @@
  location={Paris, France},
  bibtex_show={true},
  pdf={https://arxiv.org/pdf/2308.14152.pdf},
+ preview={codeDiff3D.png},
  abstract={Generating 3D images of complex objects conditionally from a few 2D views is a difficult synthesis problem, compounded by issues such as domain gap and geometric misalignment. For instance, a unified framework such as Generative Adversarial Networks cannot achieve this unless they explicitly define both a domain-invariant and geometric-invariant joint latent distribution, whereas Neural Radiance Fields are generally unable to handle both issues as they optimize at the pixel level. By contrast, we propose a simple and novel 2D to 3D synthesis approach based on conditional diffusion with vector-quantized codes. Operating in an information-rich code space enables highresolution 3D synthesis via full-coverage attention across the views. Specifically, we generate the 3D codes, eg for CT images, conditional on previously generated 3D codes and the entire codebook of two 2D views (eg 2D X-rays). Qualitative and quantitative results demonstrate state-ofthe-art performance over specialized methods across varied evaluation criteria, including fidelity metrics such as density and coverage and distortion metrics for two datasets of complex volumetric imagery found in real-world scenarios.}
 }
