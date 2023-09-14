@@ -61,10 +61,10 @@
                 <span class="author-block">
                   <a href="https://samb-t.github.io/" target="_blank">Sam Bond-Taylor</a>,</span>
                   <span class="author-block">
-                    <a target="_blank">Neelanjan Bhowmik</a>,
+                    <a href="https://www.durham.ac.uk/staff/neelanjan-bhowmik/" target="_blank">Neelanjan Bhowmik</a>,
                   </span>
 		    <span class="author-block">
-		      <a target="_blank">Yona Falinie A. Gaus</a>,
+		      <a href="https://yonafalinie.github.io/" target="_blank">Yona Falinie A. Gaus</a>,
 		    </span>
 		    <span class="author-block">
 		      <a href="https://breckon.org/toby/" target="_blank">Toby P. Breckon</a>,</span>
@@ -215,19 +215,44 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Potential 3D Applications</h2>
+      <h3 class="title is-4">Computed Tomography from biplanar X-rays</h3>
+      <p>Generating CT from X-rays has potential for reducing patient radiation exposure and cost. In chest CT experiments, our model accurately separates soft tissue and bone without being explicitly trained to decompose them. Compared to competive methods, our results are less noisy with distinct anatomical structures.</p>
+      <br><br>
+      <h3 class="title is-4">Reconstruction of Baggage Screening</h3>
       <div id="results-carousel" class="carousel results-carousel">
-	<div class="item">
+	<div class="square">
           <!-- Your image here -->
-	  <div class="grid-container">
-	    <img src="static/images/task_overview_final.png" alt="MY ALT TEXT"/>
-	  <div class="grid-column">
-	    <img src="static/gifs/bags/0090102394.gif" alt="GIF 1">
-	    <img src="static/gifs/bags/0090104770.gif" alt="GIF 2">
-	    <img src="static/gifs/bags/0090107849.gif" alt="GIF 3">
+	  <div>
+	    <img-wrapper src="static/images/task_overview_final.png" alt="method_overview_image"/>
 	  </div>
+	  <p>Our approach can model objects within passenger bags, especially useful in security screening for detecting prohibited items. Yet, 3D reconstruction in this context is challenging due to diverse baggage types (suitcases, backpacks) and unpredictable, compactly arranged items.</p>
+	</div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+	  <!-- Bags results carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+	<img src="static/images/bags_qual_comp.png" alt="security_baggage_comparison"/>
+	<div class="grid-container">
+	<div class="grid-item">
+	    <img src="static/gifs/bags/0090102394.gif" alt="GIF 3">
+	</div>
+	<div class="grid-item">
+	    <img src="static/gifs/bags/0090107849.gif" alt="GIF 2">
+	</div>
+	<div class="grid-item">
+	    <img src="static/gifs/bags/0090104770.gif" alt="GIF 1">
+	</div>
 	</div>
         <h2 class="subtitle has-text-centered">
-          Our approach allows 2D to 3D translation from unaligned data by independently learning discrete information-rich codebooks for both domains with Vector-Quantized VAEs. New 3D samples are then synthesized by modeling the conditional probability given few X-rays with a discrete diffusion model parameterized by an unconstrained transformer.
+          Our model accurately represents bag and suitcase identities, whereas other methods either focus on shape boundaries or tend to lack diversity. Airport security prioritizes denser objects as these are more likely to be prohibited. Our model better captures dense structures, shown by darker colors, aligning with real-world scenarios. In contrast, other models blur dense and soft structures, making them hard to distinguish.
         </h2>
       </div>
       </div>
@@ -245,7 +270,7 @@
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <video poster="" id="tree" controls muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/codeDiff3D_teaser_video.mp4"
         type="video/mp4">
