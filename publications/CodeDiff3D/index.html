@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/gif_grid.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
@@ -129,25 +130,30 @@
       </div>
     </div>
   </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
+<!-- Teaser -->
+<section class="hero">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <div class="grid-item-img">
+	  <img src="static/images/chest_qual_comp.png" alt="PNG Image">
+      </div>
+      <br>
+      <div class="grid-container">
+      <div class="grid-item">
+	  <img src="static/gifs/chest/0462_chest.gif" alt="GIF 3">
+      </div>
+      <div class="grid-item">
+	  <img src="static/gifs/chest/0146_chest.gif" alt="GIF 1">
+      </div>
+      </div>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+        We propose a novel and simple translation approach based on conditional diffusion using transformers, generating state-of-the-art 3D samples (e.g. CT) conditional on two 2D images from a different domain (e.g. X-rays).</h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -204,6 +210,31 @@
 <!-- End image carousel -->
 
 
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Potential 3D Applications</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+	<div class="item">
+          <!-- Your image here -->
+	  <div class="grid-container">
+	    <img src="static/images/task_overview_final.png" alt="MY ALT TEXT"/>
+	  <div class="grid-column">
+	    <img src="static/gifs/bags/0090102394.gif" alt="GIF 1">
+	    <img src="static/gifs/bags/0090104770.gif" alt="GIF 2">
+	    <img src="static/gifs/bags/0090107849.gif" alt="GIF 3">
+	  </div>
+	</div>
+        <h2 class="subtitle has-text-centered">
+          Our approach allows 2D to 3D translation from unaligned data by independently learning discrete information-rich codebooks for both domains with Vector-Quantized VAEs. New 3D samples are then synthesized by modeling the conditional probability given few X-rays with a discrete diffusion model parameterized by an unconstrained transformer.
+        </h2>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
 
 
 <!-- Youtube video -->
@@ -214,55 +245,17 @@
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/codeDiff3D_teaser_video.mp4"
+        type="video/mp4">
+      </video>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
 
 
 <!-- Paper poster -->
