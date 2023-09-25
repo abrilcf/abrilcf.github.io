@@ -1,0 +1,1 @@
+$(".grid").masonry({itemSelector:".grid-item",columnWidth:".grid-sizer",gutter:".gutter-sizer",percentPosition:!0}),$("#image-size").click(function(){this.checked?($(".randomize").addClass("grid-item-width2"),$(".grid").masonry("layout")):($(".randomize").removeClass("grid-item-width2"),$(".grid").masonry("layout"))});
