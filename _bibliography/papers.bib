@@ -12,6 +12,7 @@
   url = {https://www.sciencedirect.com/science/article/pii/S2352914819301893},
   author = {Abril Corona-Figueroa},
   bibtex_show={true},
+  preview={prego.jpg},
   pdf={https://www.sciencedirect.com/science/article/pii/S2352914819301893},
   abstract = {Expert knowledge and proper techniques are necessary for diagnosing and treating fetal cardiac disease. Fetal arrhythmia represents an important part of fetal cardiac disease as it conveys abnormalities in the electrophysiological state of the heart. Arrhythmias can be caused by rate or rhythm alterations or by abnormalities in QRS or QT intervals. Fetal echocardiography has been the gold standard for pediatric cardiologists since it assesses multiple aspects of fetal cardiovascular pathology. In parallel, artificial intelligence techniques are being designed to provide additional support to experts in the medical field in terms of detection and accuracy. The present manuscript describes the development of a prototype meant to be an auxiliary for the detection of fetal arrhythmias by analyzing the fetal heart rate (FHR) and its variability. It consists of a portable electrocardiograph and a mobile application that, together, extract the fetal electrocardiogram for its analysis to finally render a first diagnosis. Conducted tests with synthetic signals based on clinical fetal arrhythmia provided a detection rate of 88.88\%. Results from tests with pregnant women may indicate that the proposed prototype can be used to render a first diagnosis without entirely depending on expert assistance. This prototype might be helpful to perform routine check-ups in the second or third trimester in pathological pregnancies associated with high risk of onset/progression of fetal arrhythmias. In addition, medical practitioners could use it to corroborate a given diagnosis or in scenarios where there is an insufficiency of human experts to attend a high population of patients.}
 }
@@ -43,8 +44,25 @@
  publisher={IEEE/CVF},
  location={Paris, France},
  bibtex_show={true},
- pdf={https://arxiv.org/pdf/2308.14152.pdf},
+ pdf={https://openaccess.thecvf.com/content/ICCV2023/html/Corona-Figueroa_Unaligned_2D_to_3D_Translation_with_Conditional_Vector-Quantized_Code_Diffusion_ICCV_2023_paper.html},
  preview={codeDiff3D.png},
+ code={https://github.com/samb-t/x2ct-vqvae},
  website={/publications/CodeDiff3D},
  abstract={Generating 3D images of complex objects conditionally from a few 2D views is a difficult synthesis problem, compounded by issues such as domain gap and geometric misalignment. For instance, a unified framework such as Generative Adversarial Networks cannot achieve this unless they explicitly define both a domain-invariant and geometric-invariant joint latent distribution, whereas Neural Radiance Fields are generally unable to handle both issues as they optimize at the pixel level. By contrast, we propose a simple and novel 2D to 3D synthesis approach based on conditional diffusion with vector-quantized codes. Operating in an information-rich code space enables high-resolution 3D synthesis via full-coverage attention across the views. Specifically, we generate the 3D codes (e.g. for CT images) conditional on previously generated 3D codes and the entire codebook of two 2D views (e.g. 2D X-rays). Qualitative and quantitative results demonstrate state-of-the-art performance over specialized methods across varied evaluation criteria, including fidelity metrics such as density, coverage, and distortion metrics for two complex volumetric imagery datasets from in real-world scenarios.}
+}
+
+@inproceedings{Corona-Figueroa_2024_CVPR,
+ author={Corona-Figueroa, Abril and Shum, Hubert P. H. and Willcocks, Chris G.},
+ booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+ series={CVPRW '24 DCA in MI},
+ title={Repeat and Concatenate: 2D to 3D Image Translation with 3D to 3D Generative Modeling},
+ year={2024},
+ month={June},
+ publisher={IEEE/CVF},
+ location={Seattle, USA},
+ bibtex_show={true},
+ pdf={https://openaccess.thecvf.com/content/CVPR2024W/DCAMI/html/Corona-Figueroa_Repeat_and_Concatenate_2D_to_3D_Image_Translation_with_3D_CVPRW_2024_paper.html},
+ preview={repeat_and_concat.png},
+ code={https://github.com/abrilcf/3D-3D_repeat-concatenate},
+ abstract={This paper investigates a 2D to 3D image translation method with a straightforward technique enabling correlated 2D X-ray to 3D CT-like reconstruction. We observe that existing approaches which integrate information across multiple 2D views in the latent space lose valuable signal information during latent encoding. Instead we simply repeat and concatenate the 2D views into higher-channel 3D volumes and approach the 3D reconstruction challenge as a straightforward 3D to 3D generative modeling problem sidestepping several complex modeling issues. This method enables the reconstructed 3D volume to retain valuable information from the 2D inputs which are passed between channel states in a Swin UNETR backbone. Our approach applies neural optimal transport which is fast and stable to train effectively integrating signal information across multiple views without the requirement for precise alignment; it produces non-collapsed reconstructions that are highly faithful to the 2D views even after limited training. We demonstrate correlated results both qualitatively and quantitatively having trained our model on a single dataset and evaluated its generalization ability across six datasets including out-of-distribution samples.}
 }
