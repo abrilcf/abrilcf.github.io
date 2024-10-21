@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2024-10-17
-inline: false
+inline: true
 related_posts: false
 ---
 
-I successfully defended my PhD!! :women_student:
+I successfully defended my PhD!! :mortar_board:
