@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I successfully defended my PhD!! :mortar_board:
+I successfully defended my PhD!! :mortar_board: :tada:

@@ -14,7 +14,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a PhD candidate in Computer Science at [Durham University](https://www.durham.ac.uk/) advised by Dr. [Chris G. Willcocks](https://cwkx.github.io/) and Dr. [Hubert P. H. Shum](http://hubertshum.com/).
+Hello! I'm a machine learning scientist with a PhD in Computer Science from [Durham University](https://www.durham.ac.uk/) advised by Dr. [Chris G. Willcocks](https://cwkx.github.io/) and Dr. [Hubert P. H. Shum](http://hubertshum.com/).
 
 My research works on deep generative modeling for medical imaging. Specifically, I've been working on the development of state-of-the-art deep learning models that leverage 2D images for generating 3D representations for potential applications like Computed Tomography from X-rays.
 
