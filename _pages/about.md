@@ -13,11 +13,11 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-ML Engineer @ [BIDMC](https://www.bidmc.org/) | [Durham University](https://www.durham.ac.uk/), ex-[VIViD](https://vivid.webspace.durham.ac.uk/)
+ML Engineer @ [BIDMC](https://www.bidmc.org/) \| [Durham University](https://www.durham.ac.uk/), ex-[VIViD](https://vivid.webspace.durham.ac.uk/)
 
-Hello!
+## Hello! :wave:
 
-My work spans vision and language generative models for healthcare applications. I pay close attention to data dimensionality and feature representation when developing deep learning architectures. Specifically, my research includes learning 3D representations from incomplete 2D medical imaging, and more recently, LLMs to identify medical adverse events.
+My work spans **vision and language generative models** for healthcare applications. I pay close attention to **data dimensionality and feature representation** when developing **deep learning architectures**. Specifically, my research includes learning 3D representations from incomplete 2D **medical imaging**, and more recently, **LLMs** to identify medical adverse events.
 
 I have a PhD in Computer Science from [Durham University](https://www.durham.ac.uk/) advised by Dr. [Chris G. Willcocks](https://cwkx.github.io/) and Dr. [Hubert P. H. Shum](http://hubertshum.com/). Prior to this, I pursued a B.Sc. in Computer Systems Engineering from the Higher School of Computing of [The National Polytechnic Institute](https://www.ipn.mx/english/), where I was advised by Prof. [Marco A. Barranco-Jimenez](https://scholar.google.com/citations?user=fcLNJWQAAAAJ&hl=en). My undergraduate thesis *Prototype for Embryonic Heart Rate Monitoring* received the Best Thesis Award among other 73 thesis.
 
